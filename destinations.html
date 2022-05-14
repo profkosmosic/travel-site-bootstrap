@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Travel Advisor</title>
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+        <script src="js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Booking Successful!</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+                    <p>You have booked this destination successfully!</p>
+                    <p>Press OK to confirm or Cancel if you changed your mind.</p>
+				</div>
+				<div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="modalButtons">OK</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modalButtons">Close</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="container-fluid" id="header">
+			<div class="row">
+				<div class="col-md-3 col-12 d-flex justify-content-center">
+					<a href="#"><img src="images/traveladvisor.png" alt="logo"></a>
+				</div>
+				<div class="col-md-9 col-12 d-flex justify-content-center">
+					<ul class="nav nav-pills" id="navigation">
+						<li><a class="font-weight-bold" href="index.html">Home</a></li>
+						<li><a class="font-weight-bold" href="#">Destinations</a></li>
+						<li><a class="font-weight-bold" href="about.html">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="offers">
+            <div class="col-12">
+                <h1 class="font-weight-bold">Destinations</h1>
+            </div>
+			<div>
+				<div class="col-12" id="destinations">
+                    <p>Currently on offer at our agency we have a grand total of 8 different destinations for you to vacation to! Each destination comes with a picture, short description and the average rating of it by the users on our website to help you pick out what you are looking for!</p>
+                    <h2 class="font-weight-bold">Which country do you want to visit?</h2>
+                    <a href="#Turkey">Turkey</a>
+                    <a href="#Egypt">Egypt</a><br class="d-block d-sm-none"/><br class="d-block d-sm-none"/>
+                    <a href="#Greece">Greece</a>
+                    <a href="#Italy">Italy</a>
+                    <h2 class="font-weight-bold" id="Turkey">Turkey</h2>
+                    <p>Explore Turkey's most popular holiday destinations, beautiful coastline and cultural festivals. Plan your holiday to Turkey with great deals on accommodation, travel advices and a variety of things to do and see!</p>
+                    <div class="row">
+                        <div class="col-xl-6 col-12 destination">
+                            <h3 class="font-weight-bold">Istanbul</h3>
+                            <img class="img-thumbnail responsive-img" src="images/lokacije/Istanbul.jpg" alt="istanbul"><br/><br/>
+                            <p>&euro;200 - &euro;400</p>
+                            <p>Average Rating</p>
+                            <i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><br/><br/>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Book Now!</a><br/><br/>
+                        </div>
+                        <div class="col-xl-6 col-12 destination">
+                            <h3 class="font-weight-bold">Antalya</h3>
+                            <img class="img-thumbnail responsive-img" src="images/lokacije/Antalya.jpg" alt="antalya"><br/><br/>
+                            <p>&euro;300 - &euro;500</p>
+                            <p>Average Rating</p>
+                            <i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><br/><br/>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Book Now!</a><br/><br/>
+                        </div>
+                    </div>
+                    <h2 class="font-weight-bold" id="Egypt">Egypt</h2>
+                    <p>Egypt welcomes you with its mighty Nile and magnificent monuments, the beguiling desert and lush delta, and with its very long past and welcoming, story-loving people. See the legendary pyramids for yourself!</p>
+                    <div class="row">
+                        <div class="col-xl-6 col-12 destination">
+                            <h3 class="font-weight-bold">Cairo</h3>
+                            <img class="img-thumbnail responsive-img" src="images/lokacije/Cairo.jpg" alt="cairo"><br/><br/>
+                            <p>&euro;300 - &euro;600</p>
+                            <p>Average Rating</p>
+                            <i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star-o fa-fw"></i><br/><br/>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Book Now!</a><br/><br/>
+                        </div>
+                        <div class="col-xl-6 col-12 destination">
+                            <h3 class="font-weight-bold">Giza</h3>
+                            <img class="img-thumbnail responsive-img" src="images/lokacije/Giza.jpg" alt="giza"><br/><br/>
+                            <p>&euro;400 - &euro;700</p>
+                            <p>Average Rating</p>
+                            <i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><br/><br/>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Book Now!</a><br/><br/>
+                        </div>
+                    </div>
+                    <h2 class="font-weight-bold" id="Greece">Greece</h2>
+                    <p>Hedonists rejoice! Greece is ancient sun-bleached ruins piercing blue skies, the balmy Aegean lapping an endless coastline and a culture alive with passionate music, wonderful cuisine and thrill-seeking activities.</p>
+                    <div class="row">
+                        <div class="col-xl-6 col-12 destination">
+                            <h3 class="font-weight-bold">Athens</h3>
+                            <img class="img-thumbnail responsive-img" src="images/lokacije/Athens.jpg" alt="athens"><br/><br/>
+                            <p>&euro;200 - &euro;300</p>
+                            <p>Average Rating</p>
+                            <i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star-o fa-fw"></i><br/><br/>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Book Now!</a><br/><br/>
+                        </div>
+                        <div class="col-xl-6 col-12 destination">
+                            <h3 class="font-weight-bold">Paralia</h3>
+                            <img class="img-thumbnail responsive-img" src="images/lokacije/Paralia.jpg" alt="paralia"><br/><br/>
+                            <p>&euro;100 - &euro;250</p>
+                            <p>Average Rating</p>
+                            <i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star-o fa-fw"></i><i class="fa fa-star-o fa-fw"></i><br/><br/>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Book Now!</a><br/><br/>
+                        </div>
+                    </div>
+                    <h2 class="font-weight-bold" id="Italy">Italy</h2>
+                    <p>Experience a completely different culture! Home to many of the world's greatest works of art, monuments, fashion, vehicles, architecture and gastronomy, Italy elates, inspires and moves like no other!</p>
+                    <div class="row">
+                        <div class="col-xl-6 col-12 destination">
+                            <h3 class="font-weight-bold">Rome</h3>
+                            <img class="img-thumbnail responsive-img" src="images/lokacije/Rome.jpg" alt="rome"><br/><br/>
+                            <p>&euro;300 - &euro;400</p>
+                            <p>Average Rating</p>
+                            <i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><br/><br/>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Book Now!</a><br/><br/>
+                        </div>
+                        <div class="col-xl-6 col-12 destination">
+                            <h3 class="font-weight-bold">Venice</h3>
+                            <img class="img-thumbnail responsive-img" src="images/lokacije/Venice.jpg" alt="venice"><br/><br/>
+                            <p>&euro;400 - &euro;500</p>
+                            <p>Average Rating</p>
+                            <i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star-o fa-fw"></i><br/><br/>
+                            <a href="#" type="button" data-toggle="modal" data-target="#exampleModal">Book Now!</a><br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="container-fluid flex align-items-center text-center light-blue" id="footer">
+			<div class="col-4">
+				<p class="font-weight-bold white-text">&copy;Lazar Petrović</p>
+			</div>
+			<div class="col-4">
+				<p class="font-weight-bold white-text">ICT College</p>
+			</div>
+			<div class="col-4">
+				<a class="fa fa-facebook" href="#"></a>
+				<a class="fa fa-twitter" href="#"></a>
+				<a class="fa fa-linkedin" href="#"></a>
+			</div>
+		</div>
+	</body>
+</html>
